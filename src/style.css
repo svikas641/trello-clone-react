@@ -1,0 +1,160 @@
+html {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: #4bbf6b;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #40a35b;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.board-header-heading {
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.board {
+  overflow-x: auto;
+  height: 94vh;
+}
+
+.board:last-child {
+  margin-right: 8px;
+  padding: 6px 8px;
+}
+
+.board-canvas {
+  display: flex;
+  padding-left: 10px;
+}
+
+.list-wrapper {
+  background-color: #ebecf0;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  min-height: 100px;
+  white-space: normal;
+  padding: 5px;
+  margin-right: 10px;
+  height: fit-content;
+}
+
+.list-header {
+  padding: 10px 8px;
+  min-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+
+.list-card {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+  cursor: grab;
+  margin-bottom: 8px;
+  max-width: 300px;
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.list-card p {
+  position: relative;
+}
+.list-card .delete {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.list-card .edit {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+}
+
+.add-card-container {
+  font-weight: 400;
+  padding: 10px;
+}
+
+.add-card-container button {
+  border: none;
+  cursor: pointer;
+}
+.add-card-input {
+  padding: 5px;
+  font-size: 14px;
+}
+.add-card-input input:focus {
+  outline: none;
+}
+
+.add-card-button {
+  background: #40a35b;
+  color: #fff;
+  padding: 5px;
+  margin-left: 2px;
+  border-radius: 3px;
+}
+
+/* .add-card-container :hover {
+  background-color: rgba(9, 45, 66, 0.13);
+  color: #17394d;
+} */
+.add-list-wrapper {
+  white-space: nowrap;
+  background-color: hsla(0, 0%, 100%, 0.24);
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 8px 30px;
+  font-size: 14px;
+  height: fit-content;
+  border: none;
+}
+
+.add-list-button {
+  color: #fff;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-header span {
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+}
